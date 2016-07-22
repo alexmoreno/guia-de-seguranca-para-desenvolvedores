@@ -84,4 +84,4 @@ Somos desenvolvedores fullstack cansados de observar como os desenvolvedores dim
 
 * Se você discorda de algo ou achou um bug, por favor abra um issue ou ande um PR. Alternativamente, pode falar conosco em hello@fallible.co (em inglês por que né)*.
 
-**Nota: Esse repositório é uma tradução do projeto forkado. A tradução é minha mas o conteúdo é todo deles. Sinta-se a vontade para me sugerir mais conteúdos aqui no githubss pra traduzir.**
+*Nota: Esse repositório é uma tradução do projeto forkado. A tradução é minha mas o conteúdo é todo deles. Sinta-se a vontade para me sugerir mais conteúdos aqui no githubss pra traduzir.*
