@@ -1,6 +1,6 @@
 # Guia prático de segurança para desenvolvedore web
 
-### The intended audience // Público Alvo
+### O Público Alvo
 
 Problemas com segurança acontecem por 2 razões - 
 
@@ -83,3 +83,5 @@ Nossas explicações detalhadas devem ajudar a primeira categoria enquanto esper
 Somos desenvolvedores fullstack cansados de observar como os desenvolvedores diminuem a barreira para chamar alguma coisa de hack, escrevendo código inseguro. Nos últimos 6 meses prevenimos leaks de mais de 15 milhões de cartões de créditos, dados pessoais de mais de 45 milhões de usuários e potencialmente salvamos empresas de fecharem as portas. Recentemente, descobrimos um problema que poderia resultar no roubo de sistema e vazamento de dados numa instituição de bitcoin. Ajudamos algumas startups a protegerem seus sistemas, a maioria delas de graça, e às vezes sem nem receber um "obrigado" como resposta. :)
 
 * Se você discorda de algo ou achou um bug, por favor abra um issue ou ande um PR. Alternativamente, pode falar conosco em hello@fallible.co (em inglês por que né)*.
+
+Nota: Esse repositório é uma tradução do projeto forkado. A tradução é minha mas o conteúdo é todo deles.
