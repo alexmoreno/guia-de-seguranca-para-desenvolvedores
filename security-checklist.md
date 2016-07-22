@@ -35,7 +35,7 @@
 - [ ] `secret` / `auth token` de SDK de terceiros não devem ser chumbados.
 - [ ] Chamadas de API que deveriam ser feitas de servidor para servidor não devem ser feitas pelo app.
 - [ ] No Android, todas as [permissões](https://developer.android.com/guide/topics/security/permissions.html) garantidas devem ser avaliadas cuidadosamente.
-- [ ] [Fixaxão de certificado](https://en.wikipedia.org/wiki/HTTP_Public_Key_Pinning) é altamente recomendado.
+- [ ] [Fixação de certificado](https://en.wikipedia.org/wiki/HTTP_Public_Key_Pinning) é altamente recomendado.
 
 
 ##### CABEÇALHOS DE SEGURANÇA E CONFIGURAÇÕES
@@ -51,16 +51,16 @@
 
 ##### SANITIZAÇÃO DE ENTRADA
 - [ ] `Sanitize` todas as entradas de usuário ou qualquer parâmetro exposto ao usuário para prevenir [XSS](https://en.wikipedia.org/wiki/Cross-site_scripting)
-- [ ] `Sanitize` todas as entradas do usuário ou qualquer parâmetro expoto ao usuário para prevenir [Injeção de SQL](https://en.wikipedia.org/wiki/SQL_injection)
+- [ ] `Sanitize` todas as entradas do usuário ou qualquer parâmetro exposto ao usuário para prevenir [Injeção de SQL](https://en.wikipedia.org/wiki/SQL_injection)
 - [ ] Sanitize as entradas de usuário se for usá-las diretamente para funcionalidades como importação de CSV.
 - [ ] `Sanitize` entradas de usuário para casos especiais como robots.txt como nomes de perfis caso você esteja usando um padrão de URL tipo empresadahora.io/username. 
 - [ ] Não concatene ou construa JSON manualmente, nunca, independente do quão pequeno o objeto é. Use as bibliotecas definidas pela sua linguagem ou framework.
-- [ ] Sanitize entradas que recebam algum tipo de URL para prevenir[SSRF](https://docs.google.com/document/d/1v1TkWZtrhzRLy0bYXBcdLUedXGb9njTNIJXa3u9akHM/edit#heading=h.t4tsk5ixehdd).
+- [ ] Sanitize entradas que recebam algum tipo de URL para prevenir [SSRF](https://docs.google.com/document/d/1v1TkWZtrhzRLy0bYXBcdLUedXGb9njTNIJXa3u9akHM/edit#heading=h.t4tsk5ixehdd).
 - [ ] Sanitize as saídas antes de exibí-las ao usuário
 
 ##### OPERAÇÕES
 - [ ] Se você é pequeno e inexperiente, avalie o uso de AWS elasticbeanstalk ou um PaaS para executar seu código.
-- [ ] Use um script de provisionamento decente para criar VMs na nuvem..
+- [ ] Use um script de provisionamento decente para criar VMs na nuvem.
 - [ ] Cheque por máquinas com `portas abertas` publicamente que não deveriam estar.
 - [ ] Cheque por banco de dados sem senha ou com senhas defaults para `databases`, especialmente com MongoDB e REDIS. A propósito, MongoDB é uma merda, evite.
 - [ ] Use SSH para acessar suas máquinas, não use senhas.
