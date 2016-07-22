@@ -17,11 +17,11 @@ Nossas explicações detalhadas devem ajudar a primeira categoria enquanto esper
 2. O que pode dar errado?
 3. Transportando dados de forma segura: HTTP explicado
 4. Eu sou quem digo que sou: Autenticação 
-4.1 Autenticação baseada em formulário
-4.2 Autenticação básica
-4.3 Um não é o suficiente: 2 fatores, 3 fatores...
-4.4 Por que usar mensgens de texto inseguras? HOTP & TOTP
-4.5 Lidando com reset de passwords
+4.1 Autenticação baseada em formulário	
+4.2 Autenticação básica		
+4.3 Um não é o suficiente: 2 fatores, 3 fatores... 	
+4.4 Por que usar mensgens de texto inseguras? HOTP & TOTP 	
+4.5 Lidando com reset de passwords 	
 5. O que eu posso fazer? Autorização
 5.1 Autorização baseada em token
 5.2 OAuth & OAuth2  
@@ -84,4 +84,4 @@ Somos desenvolvedores fullstack cansados de observar como os desenvolvedores dim
 
 * Se você discorda de algo ou achou um bug, por favor abra um issue ou ande um PR. Alternativamente, pode falar conosco em hello@fallible.co (em inglês por que né)*.
 
-** Nota: Esse repositório é uma tradução do projeto forkado. A tradução é minha mas o conteúdo é todo deles. Sinta-se a vontade para me sugerir mais conteúdos aqui no githubss pra traduzir. **
+**Nota: Esse repositório é uma tradução do projeto forkado. A tradução é minha mas o conteúdo é todo deles. Sinta-se a vontade para me sugerir mais conteúdos aqui no githubss pra traduzir.**
