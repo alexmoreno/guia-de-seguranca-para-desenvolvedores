@@ -1,85 +1,85 @@
-# A practical security guide for web developers
+# Guia prático de segurança para desenvolvedore web
 
-### The intended audience
+### The intended audience // Público Alvo
 
-Security issues happen for two reasons - 
+Problemas com segurança acontecem por 2 razões - 
 
-1. Developers who have just started and cannot really tell a difference between using MD5 or bcrypt.
-2. Developers who know stuff but forget/ignore them.
+1. Desenvolvedores que acabaram de começar a programar e não sabem dizer a diferença entre usar MD5 ou bcrypt.
+2. Desenvolvedores que sabem das coisas, mas esquecem/ignoram.
 
-Our detailed explanations should help the first type while we hope our checklist helps the second one create more secure systems. This is by no means a comprehensive guide, it just covers stuff based on the most common issues we have discovered in the past.
+Nossas explicações detalhadas devem ajudar a primeira categoria enquanto esperamos que nosso checklist ajude a segunda a criar sistemas mais seguros. Não é o intuito aqui criar um guia compreensivo, apenas a abranger elementos baseados nos problemas mais comuns que descobrimos no passado.
 
 
-### Contents
 
-1. [The Security Checklist](security-checklist.md)
-2. What can go wrong?
-3. Securely transporting stuff: HTTPS explained
-4. I am who I say I am: Authentication  
-4.1 Form based authentication  
-4.2 Basic authentication  
-4.3 One is not enough, 2 factor, 3 factor, ....   
-4.4 Why use insecure text messages? Introducing HOTP & TOTP   
-4.5 Handling password resets
-5. What am I allowed to do?: Authorization  
-5.1 Token based Authorization  
+### Conteúdo
+
+1. [Checklist de Segurança](security-checklist.md)
+2. O que pode dar errado?
+3. Transportando dados de forma segura: HTTP explicado
+4. Eu sou quem digo que sou: Autenticação 
+4.1 Autenticação baseada em formulário
+4.2 Autenticação básica
+4.3 Um não é o suficiente: 2 fatores, 3 fatores...
+4.4 Por que usar mensgens de texto inseguras? HOTP & TOTP
+4.5 Lidando com reset de passwords
+5. O que eu posso fazer? Autorização
+5.1 Autorização baseada em token
 5.2 OAuth & OAuth2  
 5.3 JWT
-6. Trust no one: User Inputs are evil  
-6.1 Sanitizing Inputs  
-6.2 Sanitizing Outputs  
-6.3 Cross Site Scripting  
-6.4 Injection Attacks  
-6.5 User uploads  
-6.6 Tamper-proof user inputs
-7. Plaintext != Encoding != Encryption != Hashing  
-7.1 Common encoding schemes  
-7.2 Encyption  
-7.3 Hashing & One way functions  
-7.4 Hashing speeds cheatsheet
-8. dadada, 123456, cute@123: Passwords  
-8.1 Password policies  
-8.2 Storing passwords  
-8.3 Life without passwords
-9. Public Key Cryptography
-10. Remember me, please: Handling Sessions  
-10.1 Where to save state?  
-10.2 Invalidating sessions  
-10.3 Cookie monster & you
-11. Fixing security, one header at a time  
-11.1 Secure web headers  
-11.2 Data integrity check for 3rd party code  
-11.3 Certificate Pinning
-12. Configuration mistakes    
-12.0 Provisoning in cloud: Ports, Shodan & AWS   
-12.1 Honey, you left the debug mode on  
-12.2 Logging (or not logging)  
-12.3 Monitoring  
-12.4 Principle of least privilege  
-12.5 Rate limiting & Captchas  
-12.6 Storing project secrets and passwords in a file    
-12.7 DNS: Of subdomains and forgotten pet-projects  
-12.7 Patching & Updates  
-13. When the bad guys arrive: Attacks  
-13.1 Clickjacking  
-13.2 Cross Site Request Forgery  
-13.3 Denial of Service  
-13.4 Server Side Request Forgery
-14. [Stats about vulnerabilities discovered in Internet Companies](vulnerabilities-stats.md)   
-15. On reinventing the wheel, and making it square  
-15.1 Security libraries and packages for Python  
-15.2 Security libraries and packages for Node/JS  
-15.3 Learning resources
-16. Maintaining a good security hygiene
-17. Security Vs Usability
-18. Back to Square 1: The Security Checklist explained
+6. Não confie em ninguém: Entradas (inputs) de usuários são DO MAL
+6.1 Sanitizando Entradas 
+6.2 Sanitizando Saídas
+6.3 Scriptação Entre Sites (Cross Site Scripting aka XSS)  
+6.4 Ataques de Injeção (Injection)
+6.5 Uploas de Usuário
+6.6 Entradas de usuários à prova de alterações
+7. Texto puro (plaintext) != Codificação (encoding) != Criptografia  != Hashing  
+7.1 Esquemas comuns de codificação
+7.2 Criptografia
+7.3 Hashing & Funções de uma via
+7.4 Guia rápido de velocidade de hashing
+8. dadada, 123456, futebol@123: Senhas
+8.1 Políticas de Senha
+8.2 Armazenamento de Senhas 
+8.3 Uma Vida sem Senhas
+9. Chave Pública de Criptografia
+10. Por favor, lembre-se de mim: Lidando com Sessões
+10.1 Onde salvar o estado?  
+10.2 Invalidando sessões  
+10.3 O monstro dos cookies & você
+11. Consertando a Segurança, um cabeçalho de cada vez
+11.1 Cabeçalhos web seguros
+11.2 Checagem de integridade de dados para códigos de terceiros
+11.3 Fixando Certificados
+12. Erros de Configuração
+12.0 Provisionamento em nuvem: Portas, Shodan & AWS
+12.1 Amor, você deixou o debug ligado
+12.2 Logar (ou não logar)
+12.3 Monitoramento
+12.4 Princípio do Menos Privilegiado
+12.5 Limitação de Avaliações & Captchas
+12.6 Armazenando de segredos de projetos e senhas em arquivo
+12.7 DNS: De subdomínios e projetos menores esquecidos
+12.7 Patching & Updates
+13. Quando o vilão chega: Ataques
+13.1 Sequestro de cliques
+13.2 Falsificação de Requisições Entre Sites (CSRF)
+13.3 Negação de Serviço (DoS)
+13.4 Falsificação de Requisições pelo Servidor (SSRF)
+14. [Estatísticas sobre vulnerabilidades encontradas em empresas de internet](vulnerabilities-stats.md)   
+15. Sobre reinventar a roda, e torná-la quadrada
+15.1 Bibliotecas e pacotes de segurança para Python 
+15.2 Bibliotecas e pacotes de segurança para Node/JS
+15.3 Aprendendo sobre Recursos
+16. Mantendo uma boa higiene de segurança
+17. Segurança vs Usabilidade
+18. Voltando pra casa 1: O Checklist de Segurança explicado
 
 
 
 
-### Who are we?
+### Quem somos?
 
-We are full stack developers who just grew tired by watching how developers were lowering the barrier to call something a hack by writing unsecure code. In the past six months we have prevented leaks of more than 15 million credit card details, personal details of over 45 million users and potentially saved companies from shutting down. Recently, we discovered an issue that could result in system takeover and data leak in a bitcoin institution. We have helped several startups secure their systems, most of them for free, sometimes without even getting a thank you in response :)
+Somos desenvolvedores fullstack cansados de observar como os desenvolvedores diminuem a barreira para chamar alguma coisa de hack, escrevendo código inseguro. Nos últimos 6 meses prevenimos leaks de mais de 15 milhões de cartões de créditos, dados pessoais de mais de 45 milhões de usuários e potencialmente salvamos empresas de fecharem as portas. Recentemente, descobrimos um problema que poderia resultar no roubo de sistema e vazamento de dados numa instituição de bitcoin. Ajudamos algumas startups a protegerem seus sistemas, a maioria delas de graça, e às vezes sem nem receber um "obrigado" como resposta. :)
 
-
-*If you disagree with something or find a bug please open an issue or file a PR. Alternatively, you can talk to us on hello@fallible.co*
+* Se você discorda de algo ou achou um bug, por favor abra um issue ou ande um PR. Alternativamente, pode falar conosco em hello@fallible.co (em inglês por que né)*.
