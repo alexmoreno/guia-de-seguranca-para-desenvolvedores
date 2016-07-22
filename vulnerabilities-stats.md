@@ -4,8 +4,8 @@
 ### Estatísticas dos bugs divulgados publicamente pela Hackerone
 
 Enquanto este documento é escrito, a plataforma Hackerone teve 1731 bugs divulgados abertamente em empresas como Twitter, Uber, Dropbox, Github, etc.
+
 8 dos bugs foram removidos spam total. 9 eram relacioandos à linguagem de programação ou à Internet em geral. Dos 1714 restantes, conseguimos classificar 1359 problemas usando um pouco de código e trabalho manual.
-8 of the bugs were removed as outright spam. 9 others were related to bugs in the Internet or a specific programming language. Out of the remaining 1714, we were able to classify 1359 issues using some code and manual work.
 
     
     
