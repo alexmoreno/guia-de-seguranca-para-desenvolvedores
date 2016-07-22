@@ -16,35 +16,35 @@ Nossas explicações detalhadas devem ajudar a primeira categoria enquanto esper
 1. [Checklist de Segurança](security-checklist.md)
 2. O que pode dar errado?
 3. Transportando dados de forma segura: HTTP explicado
-4. Eu sou quem digo que sou: Autenticação 
-4.1 Autenticação baseada em formulário	
-4.2 Autenticação básica		
-4.3 Um não é o suficiente: 2 fatores, 3 fatores... 	
-4.4 Por que usar mensgens de texto inseguras? HOTP & TOTP 	
-4.5 Lidando com reset de passwords 	
-5. O que eu posso fazer? Autorização
-5.1 Autorização baseada em token
-5.2 OAuth & OAuth2  
-5.3 JWT
-6. Não confie em ninguém: Entradas (inputs) de usuários são DO MAL
-6.1 Sanitizando Entradas  
-6.2 Sanitizando Saídas 
-6.3 Scriptação Entre Sites (Cross Site Scripting aka XSS)  
-6.4 Ataques de Injeção (Injection) 	
-6.5 Uploas de Usuário 
-6.6 Entradas de usuários à prova de alterações 
-7. Texto puro (plaintext) != Codificação (encoding) != Criptografia  != Hashing  
-7.1 Esquemas comuns de codificação 
-7.2 Criptografia 
-7.3 Hashing & Funções de uma via 
-7.4 Guia rápido de velocidade de hashing 
-8. dadada, 123456, futebol@123: Senhas 
-8.1 Políticas de Senha 
-8.2 Armazenamento de Senhas  
-8.3 Uma Vida sem Senhas 
-9. Chave Pública de Criptografia  
-10. Por favor, lembre-se de mim: Lidando com Sessões 	
-10.1 Onde salvar o estado?   	
+4. Eu sou quem digo que sou: Autenticação 	
+4.1 Autenticação baseada em formulário			
+4.2 Autenticação básica			
+4.3 Um não é o suficiente: 2 fatores, 3 fatores... 			
+4.4 Por que usar mensgens de texto inseguras? HOTP & TOTP 		
+4.5 Lidando com reset de passwords 		
+5. O que eu posso fazer? Autorização	
+5.1 Autorização baseada em token	
+5.2 OAuth & OAuth2  	
+5.3 JWT	
+6. Não confie em ninguém: Entradas (inputs) de usuários são DO MAL	
+6.1 Sanitizando Entradas  	
+6.2 Sanitizando Saídas 	
+6.3 Scriptação Entre Sites (Cross Site Scripting aka XSS)  	
+6.4 Ataques de Injeção (Injection) 		
+6.5 Uploas de Usuário 	
+6.6 Entradas de usuários à prova de alterações 	
+7. Texto puro (plaintext) != Codificação (encoding) != Criptografia  != Hashing  	
+7.1 Esquemas comuns de codificação 		
+7.2 Criptografia 	
+7.3 Hashing & Funções de uma via 	
+7.4 Guia rápido de velocidade de hashing 	
+8. dadada, 123456, futebol@123: Senhas 	
+8.1 Políticas de Senha 			
+8.2 Armazenamento de Senhas  	
+8.3 Uma Vida sem Senhas 	
+9. Chave Pública de Criptografia  	
+10. Por favor, lembre-se de mim: Lidando com Sessões 		
+10.1 Onde salvar o estado?   		
 10.2 Invalidando sessões   	
 10.3 O monstro dos cookies & você 	
 11. Consertando a Segurança, um cabeçalho de cada vez  	
