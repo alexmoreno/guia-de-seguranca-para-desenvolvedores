@@ -43,33 +43,33 @@ Nossas explicações detalhadas devem ajudar a primeira categoria enquanto esper
 8.2 Armazenamento de Senhas  
 8.3 Uma Vida sem Senhas 
 9. Chave Pública de Criptografia  
-10. Por favor, lembre-se de mim: Lidando com Sessões 
-10.1 Onde salvar o estado?   
-10.2 Invalidando sessões   
-10.3 O monstro dos cookies & você 
-11. Consertando a Segurança, um cabeçalho de cada vez  
-11.1 Cabeçalhos web seguros 
-11.2 Checagem de integridade de dados para códigos de terceiros 
-11.3 Fixando Certificados 
+10. Por favor, lembre-se de mim: Lidando com Sessões 	
+10.1 Onde salvar o estado?   	
+10.2 Invalidando sessões   	
+10.3 O monstro dos cookies & você 	
+11. Consertando a Segurança, um cabeçalho de cada vez  	
+11.1 Cabeçalhos web seguros 	
+11.2 Checagem de integridade de dados para códigos de terceiros 	
+11.3 Fixando Certificados 	
 12. Erros de Configuração 
-12.0 Provisionamento em nuvem: Portas, Shodan & AWS 
-12.1 Amor, você deixou o debug ligado 
-12.2 Logar (ou não logar) 
-12.3 Monitoramento  
-12.4 Princípio do Menos Privilegiado 
-12.5 Limitação de Avaliações & Captchas  
-12.6 Armazenando de segredos de projetos e senhas em arquivo 
-12.7 DNS: De subdomínios e projetos menores esquecidos  
-12.7 Patching & Updates  
-13. Quando o vilão chega: Ataques 
-13.1 Sequestro de cliques 
-13.2 Falsificação de Requisições Entre Sites (CSRF) 
-13.3 Negação de Serviço (DoS) 
-13.4 Falsificação de Requisições pelo Servidor (SSRF) 
+12.0 Provisionamento em nuvem: Portas, Shodan & AWS 	
+12.1 Amor, você deixou o debug ligado 	
+12.2 Logar (ou não logar) 	
+12.3 Monitoramento  	
+12.4 Princípio do Menos Privilegiado 	
+12.5 Limitação de Avaliações & Captchas  	
+12.6 Armazenando de segredos de projetos e senhas em arquivo 	
+12.7 DNS: De subdomínios e projetos menores esquecidos  	
+12.7 Patching & Updates  	
+13. Quando o vilão chega: Ataques 	
+13.1 Sequestro de cliques 	
+13.2 Falsificação de Requisições Entre Sites (CSRF) 	
+13.3 Negação de Serviço (DoS) 	
+13.4 Falsificação de Requisições pelo Servidor (SSRF) 	
 14. [Estatísticas sobre vulnerabilidades encontradas em empresas de internet](vulnerabilities-stats.md)    
-15. Sobre reinventar a roda, e torná-la quadrada 
-15.1 Bibliotecas e pacotes de segurança para Python  
-15.2 Bibliotecas e pacotes de segurança para Node/JS 
+15. Sobre reinventar a roda, e torná-la quadrada 		
+15.1 Bibliotecas e pacotes de segurança para Python  	
+15.2 Bibliotecas e pacotes de segurança para Node/JS 	
 15.3 Aprendendo sobre Recursos 
 16. Mantendo uma boa higiene de segurança 
 17. Segurança vs Usabilidade 
